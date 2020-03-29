@@ -10,7 +10,7 @@ function App() {
 		<h1 className="App-title"> Welcome to React </h1>
 		</header>
         <p className="App-intro">
-          I was changed on the Feature branch
+          I was changed on the Feature branch learn react
         </p>
        
     </div>
