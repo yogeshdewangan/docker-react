@@ -7,5 +7,5 @@ before_install:
     - docker build -t yogesh/docker-react -f Dockerfile.dev .
     
 scripts:
-    - docker run yogesh/docker-react npm run test -- --coverage
+    - docker run -e CI=true yogesh/docker-react npm run test
     
