@@ -1,0 +1,11 @@
+language: generic 
+sudo: required
+services:
+    - docker
+    
+before_install:
+    - docker build -t yogesh/docker-react -f Dockerfile.dev .
+    
+scripts:
+    - docker run yogesh/docker-react npm run test -- --coverage
+    
